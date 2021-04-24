@@ -33,7 +33,7 @@ import it.xabaras.android.recyclerview.swipedecorator.RecyclerViewSwipeDecorator
 
 public class FragmentFilms extends Fragment {
 
-    //json link - https://run.mocky.io/v3/62b18870-21fb-4a08-aeb5-096b50992473
+    //json link 
     private static String jsonURL = "https://run.mocky.io/v3/278f74b0-de01-4ef0-9421-065e1efcf00d";
 
     private FloatingActionButton addButton;
