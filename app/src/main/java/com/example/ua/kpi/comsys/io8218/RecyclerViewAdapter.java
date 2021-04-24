@@ -48,29 +48,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.year.setText(mData.get(position).getFilmYear());
         holder.type.setText(mData.get(position).getFilmType());
         Glide.with(mContext).load(mData.get(position).getFilmPoster()).into(holder.image);
-        //holder.image.setImageResource(mData.get(position).getFilmPoster());
-//        holder.parentLayout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(mContext, DetailActivity.class);
-//                intent.putExtra("filmPoster", film.getFilmPoster());
-//                intent.putExtra("filmName", film.getFilmName());
-//                intent.putExtra("filmYear", film.getFilmYear());
-//                intent.putExtra("filmGenre", film.getFilmGenre());
-//                intent.putExtra("filmDirector", film.getFilmDirector());
-//                intent.putExtra("filmWriter", film.getFilmWriter());
-//                intent.putExtra("filmActors", film.getFilmActors());
-//                intent.putExtra("filmCountry", film.getFilmCountry());
-//                intent.putExtra("filmLanguage", film.getFilmLanguage());
-//                intent.putExtra("filmProduction", film.getFilmProduction());
-//                intent.putExtra("filmRelease", film.getFilmRelease());
-//                intent.putExtra("filmRuntime", film.getFilmRuntime());
-//                intent.putExtra("filmAwards", film.getFilmAwards());
-//                intent.putExtra("filmRating", film.getFilmRating());
-//                intent.putExtra("filmPlot", film.getFilmPlot());
-//                mContext.startActivity(intent);
-//            }
-//        });
     }
 
     @Override
@@ -92,8 +69,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             year = itemView.findViewById(R.id.year_film);
             type = itemView.findViewById(R.id.type_film);
             image = itemView.findViewById(R.id.image_film);
-
-            parentLayout = itemView.findViewById(R.id.parent_layout);
         }
     }
 
